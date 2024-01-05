@@ -1,0 +1,20 @@
+.App {
+    width: 1000px;
+    margin: 50px auto;
+    display: grid;
+    row-gap: 20px;
+
+}
+
+.app-grid-template {
+    grid-template-rows: 67px;
+    display: grid;
+    grid-template-columns: 1fr 705px;
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.main-container{
+  @extend .app-grid-template;
+  grid-template-rows: none;
+}

@@ -1,0 +1,48 @@
+@use '../../App.scss';
+.app-header {
+    @extend .app-grid-template;
+}
+.user-panel {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.user-panel-info {
+    flex: 1;
+}
+
+.user-panel-login,
+.user-panel-logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #8a92a6;
+}
+
+.user-panel-login::after {
+    content: url("../../resources/images/down-arrow.png");
+    margin: 3px;
+    padding-top: 5px;
+}
+
+.user-panel-logo-auth {
+    background-image: url("../../resources/images/unlogged_user.png");
+    background-size: 33px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 33px;
+}
+
+.logo {
+    background-color: #079aa2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    height: 100%;
+}

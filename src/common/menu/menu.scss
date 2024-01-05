@@ -1,0 +1,19 @@
+.menu {
+    padding: 24px;
+    background-color: white;
+    
+    a {
+        margin: 5px 0;
+        color: #8A92A6;
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+        display: flex;
+
+    }
+
+    a::before {
+        content: url("../../resources/images/arrow.png");
+    }
+}
+
