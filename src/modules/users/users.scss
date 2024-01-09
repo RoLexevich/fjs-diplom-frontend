@@ -1,3 +1,13 @@
 .user-title {
     font-size: 40px;
 }
+.users {
+    background-color: white;
+    padding: 24px;
+    > :first-child {
+        margin: 0px;
+    }
+     > * {
+        margin: 24px 0px 0px 0px;
+    }
+}
