@@ -7,7 +7,7 @@ export default function Header() {
     return (
         <>
             <header className="app-header">
-                <div className="logo">Logo</div>
+                <div className="logo"></div>
                 <div className="user-panel">
                     <div className="user-panel-info">{user}</div>
                     {user ? (

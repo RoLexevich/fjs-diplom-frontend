@@ -1,3 +1,5 @@
+@use 'src/App.scss';
+
 .user-title {
     font-size: 40px;
 }
@@ -10,4 +12,14 @@
      > * {
         margin: 24px 0px 0px 0px;
     }
+}
+
+.user-input {
+    width: 100%;
+    color: #8A92A6;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    border: 1px solid #eeeeee;
 }

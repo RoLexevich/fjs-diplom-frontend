@@ -42,7 +42,8 @@
         }
     } 
 }
-.main-button {
+
+.search-button {
     @include common-button-style();
 }
 
@@ -63,4 +64,21 @@ button[disabled] {
 
 .cancel-button {
     @include common-button-style(#E15D5D);
+}
+
+.plus-image-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #EEEEEE;
+    color: #8A92A6;
+    border-radius: 4px;
+    border: 1px solid #EEEEEE;
+    width: 98px;
+    height: 100px;
+}
+.plus-image-button::after{
+    content: "\002B";
+    font-size: 30px;
 }

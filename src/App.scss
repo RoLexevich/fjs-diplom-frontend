@@ -3,7 +3,6 @@
     margin: 50px auto;
     display: grid;
     row-gap: 20px;
-
 }
 
 .app-grid-template {
@@ -14,7 +13,31 @@
     column-gap: 40px;
 }
 
-.main-container{
-  @extend .app-grid-template;
-  grid-template-rows: none;
+.common-module-style {
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.main-container {
+    @extend .app-grid-template;
+    grid-template-rows: none;
+    align-items: start;
+}
+
+textarea {
+    resize: none;
+    box-sizing: border-box;
+    font-family: "Inter";
+    font-size: 16px;
+    line-height: 22px;
+}
+input {
+    box-sizing: border-box;
+    font-family: "Inter";
+    font-size: 26px;
+    color: #232D42;
+    line-height: 26px;
+
 }

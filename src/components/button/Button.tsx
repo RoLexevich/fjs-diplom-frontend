@@ -1,13 +1,16 @@
-import { ReactComponent as Loader } from "../../resources/images/loader.svg";
 import "./button.scss";
 
 const Button = ({ className, onSubmit, text, loading, disabled }: any) => {
-    console.log(className)
     return (
         <button
-            className={className || "main-button"}
+            className={className || "search-button"}
             disabled={disabled}
-            onClick={disabled || loading ? onSubmit : null}
+            
+            onClick={()=>{
+                if(!disabled && !loading){
+                    onSubmit();
+                }
+            }}
         >
             {text} {!loading ? String() : <span className="loader"></span>}
         </button>

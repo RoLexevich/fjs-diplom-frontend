@@ -1,4 +1,4 @@
-@use '../../App.scss';
+@use 'src/App.scss';
 .app-header {
     @extend .app-grid-template;
 }
@@ -39,6 +39,7 @@
 
 .logo {
     background-color: #079aa2;
+    background-image: url("../../resources/images/hotels/logo.png");;
     color: white;
     display: flex;
     justify-content: center;
