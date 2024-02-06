@@ -1,0 +1,32 @@
+@use "src/App.scss";
+
+.login-form {
+    background-color: white;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 361px;
+    border: 1px solid #eeeeee;
+    padding: 30px 20px;
+}
+
+.login-form-link-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    div {
+        color: #8A92A6;
+    }
+}
+
+.login-form-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 20px;
+
+    input {
+        @extend .common-input-style;
+        font-size: 16px;
+        width: 100%;
+    }
+}

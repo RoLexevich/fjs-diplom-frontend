@@ -1,8 +1,16 @@
 import Button from "@/components/Button/Button";
 import "./users.scss";
 import UserTable from "./table/UserTable";
+import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { fetchUsers } from "@/store/usersSlice";
 
-const Users = ()=> {
+const Users = () => {
+    const dispatch = useDispatch();
+    const [searchStr, setSearchStr] = useState(String());
+    useEffect(() => {
+        dispatch(fetchUsers(String()) as any);
+    }, [dispatch]);
     return (
         <>
             <div className="users">
@@ -10,18 +18,21 @@ const Users = ()=> {
                 <input
                     className="user-input"
                     name="exampleInput"
-                    placeholder="Введите имя пользователя, id, телефон или почту"
+                    value={searchStr}
+                    onChange={e => setSearchStr(e.target.value)}
+                    placeholder="Введите имя пользователя, телефон или почту"
                     min={2}
                 />
                 <Button
-                    onSubmit={() => {}}
-                    text={"искать224442"}
-                    loading={true}
+                    onSubmit={() => {
+                        dispatch(fetchUsers(searchStr) as any);
+                    }}
+                    text={"искать"}
                 />
                 <UserTable></UserTable>
             </div>
         </>
     );
-}
+};
 
 export default Users;

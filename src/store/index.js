@@ -1,5 +1,10 @@
-import {configureStore} from '@reduxjs/toolkit';
+import { configureStore } from "@reduxjs/toolkit";
+import usersReducer from "./usersSlice";
+import hotelsReducer from "./hotelsSlice";
 
 export default configureStore({
-    reducer: {}
-})
+    reducer: {
+        users: usersReducer,
+        hotels: hotelsReducer,
+    },
+});

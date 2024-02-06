@@ -1,15 +1,15 @@
 import './menu.scss';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Menu() {
 
     return (
         <>
             <nav className="menu">
-                <Link to="/hotels">Все гостиницы</Link>
-                <Link to="*">Поиск номера</Link>
-                <Link to="*">Добавить гостиницу</Link>
-                <Link to="/users">Пользователи</Link>
+                <NavLink to="/hotels">Все гостиницы</NavLink>
+                <NavLink to="*">Поиск номера</NavLink>
+                <NavLink to="*">Добавить гостиницу</NavLink>
+                <NavLink to="/users">Пользователи</NavLink>
             </nav>
         </>
     );
